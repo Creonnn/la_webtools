@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static '../static/css/style.css' %}">
+        <title>LA website</title>
+    </head>
+    <body></body>
+        {% include "navbar.html" %}
+        {% block content %}
+        replace me
+        {% endblock %}
+    </body>
+</html>
