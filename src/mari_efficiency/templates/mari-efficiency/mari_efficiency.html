@@ -1,0 +1,12 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+
+<ul>
+    {% for item in obj %}
+    <li>Name: {{ item.name }} // Quantity: {{ item.quantity }} // Cost: {{ item.cost }}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %} 
