@@ -38,6 +38,7 @@ INSTALLED_APPS = [
 
     #own
     'products',
+    'mari_efficiency',
 ]
 
 MIDDLEWARE = [
