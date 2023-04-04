@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path
 
 from pages.views import home_view, about_view #Be specific which view you want to import
+from products.views import product_detail_view, product_create_view
+from mari_efficiency.views import item_detail_view
 
 urlpatterns = [
     path('', home_view, name='home'),
     path('about/', about_view, name='about'),
     path('admin/', admin.site.urls),
+    path('view-items/', item_detail_view)
 ]
